@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emperor Penguin</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script>
+        function setUsername() {
+            document.getElementById("username-p").innerHTML = document.getElementById("username").value + "'s Gallery";
+        }
+        function setProfileImage() {
+            document.getElementById("ProfileImage1").style.backgroundImage = "url(" + document.getElementById("ProfileImage").value;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="mine">
+        <div class="avatar">
+            <div class="profile-img" id="ProfileImage1">
+            </div>
+            <div class="noti">6</div>
+        </div>
+        <div class="username">
+            <a href="https://greennews.agency/?p=18932" class="on-hover">
+                <p style="font-size: x-large; font-weight: 400;" id="username-p">Nonthaphat Phumchareon</p>
+            </a>
+        </div>
+        <div class="input-group">
+            <div><label style="font-weight: 400;">Username</label><input style="margin-left: 10px;" type="text" 
+                    id="username"><button style="margin-left: 10px;" id="setUsername" onclick="setUsername()">Apply</button></div>
+            <div><label style="font-weight: 400;">Profile Image</label><input style="margin-left: 10px;" type="text" 
+                    id="ProfileImage"><button style="margin-left: 10px;" id="setProfileImage" onclick="setProfileImage()">Apply</button></div>
+        <div class="gallery">
+            <div class="gallery-item col-span">
+                <img src="/photo/photo1.jpg" height="300" width="625">
+            </div>
+            <div class="gallery-item">
+                <img src="/photo/photo2.jpg" height="300" width="300">
+            </div>
+            <div class="gallery-item">
+                <img src="/photo/photo3.jpg" height="300" width="300">
+            </div>
+            <div class="gallery-item">
+                <img src="/photo/photo4.jpg" height="300" width="300">
+            </div>
+            <div class="gallery-item">
+                <img src="/photo/photo5.jpg" height="300" width="300">
+            </div>
+            <div class="gallery-item">
+                <img src="/photo/photo6.jpg" height="300" width="300">
+            </div>
+            <div class="gallery-item">
+                <img src="/photo/photo7.jpg" height="300" width="300">
+            </div>
+            <div class="gallery-item row-span">
+                <img src="/photo/photo8.jpg" height="625" width="300">
+            </div>
+            <div class="gallery-item">
+                <img src="/photo/photo9.jpg" height="300" width="300">
+            </div>
+            <div class="gallery-item">
+                <img src="/photo/photo10.jpg" height="300" width="300">
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
